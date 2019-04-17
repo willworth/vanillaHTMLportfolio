@@ -1,0 +1,20 @@
+@import "variables";
+
+body {
+  background: $primColor;
+}
+
+h1 {
+  color: $highColor;
+}
+
+h2 {
+  color: red;
+}
+h3 {
+  color: green;
+}
+
+hr {
+  color: #ca7df9;
+}
