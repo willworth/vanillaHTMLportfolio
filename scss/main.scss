@@ -1,10 +1,25 @@
 @import "variables";
 
+@mixin easeOut {
+  transition: all 0.5s ease-out;
+}
+
+@mixin background {
+  @if $show-home-image {
+    &#bg-img {
+      background: $home-image;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+  }
+}
+
 * {
   box-sizing: border-box;
 }
 
 body {
+  @include background;
   background: $primColor;
   border: solid 5px $highColor;
   padding: 10px;
@@ -61,7 +76,14 @@ main {
       padding: 0.4rem;
       &:hover {
         color: $textSecondary;
+        @include easeOut();
       }
+    }
+  }
+  &#home {
+    overflow: hidden; // https://css-tricks.com/the-css-overflow-property/
+    h1 {
+      margin-top: 20vh;
     }
   }
 }
