@@ -1,0 +1,23 @@
+{
+  "name": "vanillaportfoliosite",
+  "version": "1.0.0",
+  "description": "simple portfolio site",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/main.scss -o dist/css/ --recursive",
+    "alt": "sass --watch main.scss ../dist/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/willworth/vanillaHTMLportfolio.git"
+  },
+  "author": "Will Worth",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/willworth/vanillaHTMLportfolio/issues"
+  },
+  "homepage": "https://github.com/willworth/vanillaHTMLportfolio#readme",
+  "dependencies": {
+    "node-sass": "^4.11.0"
+  }
+}

@@ -1,0 +1,20 @@
+npm sass script uses -w flag which is for watch -o which is output
+
+"hello": "echo \"hello from scripts\"",
+
+
+for some reason node sass isn't working so using:
+
+sass --watch main.scss ../dist/main.css
+
+
+background: lighten($primColor, 2);
+
+
+but for the transparency
+
+background: rgba(lighten($primColor, 2), 0.5);
+
+the rgba allows you to also have an opacity... great for seethrough imgs...
+
+https://css-tricks.com/almanac/selectors/a/after-and-before/
